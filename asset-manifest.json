@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/virtual-pino/static/css/main.36e88bc9.css",
+    "main.js": "/virtual-pino/static/js/main.f5bd18b9.js",
+    "index.html": "/virtual-pino/index.html",
+    "main.36e88bc9.css.map": "/virtual-pino/static/css/main.36e88bc9.css.map",
+    "main.f5bd18b9.js.map": "/virtual-pino/static/js/main.f5bd18b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36e88bc9.css",
+    "static/js/main.f5bd18b9.js"
+  ]
+}
