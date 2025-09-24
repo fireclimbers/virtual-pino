@@ -1,38 +1,75 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.controls {
+  margin: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.piano {
+  position: relative;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.white-keys {
+  display: flex;
+}
+
+.piano-key.white {
+  width: 60px;
+  height: 200px;
+  background: white;
+  border: 1px solid #333;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.black-wrapper {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.piano-key.black {
+  width: 40px;
+  height: 120px;
+  background: black;
+  border: 1px solid #222;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+  
+.label {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+.note {
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+.solfege {
+  font-weight: bold;
+  color: red;
+  margin-bottom: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.piano-key.white.active {
+  background: lightblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.piano-key.black.active {
+  background: #3399ff;
 }
+
